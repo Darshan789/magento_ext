@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+            <update id="Harsh_HelloWorld::helloworld" title="Harsh" module="Magento_Backend" sortOrder="177" resource="Harsh_HelloWorld::helloworld"/>
+            <add id="Harsh_HelloWorld::helloworldparent" title="Harsh" module="Harsh_HelloWorld" sortOrder="72"  parent="Harsh_HelloWorld::helloworld" resource="Harsh_HelloWorld::helloworldparent" />
+            <add id="Harsh_HelloWorld::helloworld1" title="Manage Blog Post" module="Harsh_HelloWorld" sortOrder="0" parent="Harsh_HelloWorld::helloworldparent" action="helloworld/" resource="Harsh_HelloWorld::helloworld1"/>
+    </menu>
+</config>
